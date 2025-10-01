@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../css/style.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+  <body>
+
+     <!-- Inicio do Menu Superior-------------------------------------- -->
+    <nav class="navbar navbar-expand-lg menu-superior">
+      <div class="container-fluid">
+        <a href="login.html" class="btn btn-voltar">
+          <i class="bi bi-arrow-left"></i>
+        </a>
+        <span class="navbar-brand mx-auto text-white">Cadastro</span>
+      </div>
+    </nav>
+    <!-- Fim do Menu Superior---------------------------------------- -->
+
+    <!-- Inicio do Conteúdo-------------------------------------- -->
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+
+      <!-- Logo -->
+      <div class="text-center mb-4">
+        <img src="../IMG/logoarsolucoes.png" alt="Logo" class="logo-cadastro">
+      </div>
+
+      <!-- Formulário -->
+      <div class="cadastro-box">
+        <form action="../php/cadastrocliente.php" method="post">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome">
+          </div>
+          <div class="mb-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" name="cpf">
+          </div>
+          <div class="mb-3">
+            <label for="contato" class="form-label">Contato:</label>
+            <input type="text" class="form-control" id="contato" placeholder="Digite seu contato" name="telefone">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" name="email">
+          </div>
+          <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+          </div>
+          <div class="mb-3">
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" name="senha">
+          </div>
+          <div class="mb-3">
+            <label for="resgatar" class="form-label">Resgatar Senha:</label>
+            <input type="password" class="form-control" id="resgatar" placeholder="Digite novamente sua senha" name="confirmar">
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-cadastrar">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Fim do Conteúdo---------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

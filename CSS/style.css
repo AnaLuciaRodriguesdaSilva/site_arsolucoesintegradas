@@ -1,0 +1,241 @@
+/* Inicio do Estilo da Tela de Login-------------------------------------- */
+
+/* Reset básico */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo, #f5f5f5);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.container-fluid {
+  height: 100vh;
+}
+
+/* Formulário */
+.login-box {
+  background-color: #B5C7A7; /* Verde claro suave */
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-box h3 {
+  font-weight: bold;
+  color: #2C3E50;
+}
+
+/* Inputs */
+.login-box .form-control {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+}
+
+/* Botão */
+.login-box .btn-login {
+  background-color: #004d4d;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.6rem;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.login-box .btn-login:hover {
+  background-color: #027373;
+}
+
+/* Links */
+.login-box a {
+  color: #2C3E50;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+/* Área da logo */
+.logo-area {
+  background-color: #3E5622; /* Verde escuro da identidade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-area img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-area {
+    padding: 2rem 0;
+  }
+  .logo-area img {
+    max-width: 40%;
+  }
+}
+
+/* Fim do Estilo da Tela de Login---------------------------------------- */
+
+/* Inicio do Estilo da Tela de Cadastro-------------------------------------- */
+
+/* Menu Superior */
+.menu-superior {
+  background-color: #3E5622; /* Verde escuro */
+  padding: 0.8rem;
+  height: 80px;
+}
+
+.btn-voltar {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.btn-voltar:hover {
+  color: #F1C40F;
+}
+
+/* Logo */
+.logo-cadastro {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+/* Caixa do formulário */
+.cadastro-box {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.cadastro-box .form-control {
+  border-radius: 50px;
+  background-color: #B5C7A7;
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.cadastro-box .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px #2980B9;
+}
+
+/* Botão */
+.btn-cadastrar {
+  background-color: #3E5622;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.7rem;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-cadastrar:hover {
+  background-color: #27AE60;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-cadastro {
+    max-width: 120px;
+  }
+  .cadastro-box {
+    padding: 1.5rem;
+  }
+}
+
+/* Fim do Estilo da Tela de Cadastro---------------------------------------- */
+
+/* Inicio do Estilo da Tela de Produtos-------------------------------------- */
+
+/* Menu Superior */
+.menu-superior {
+  background-color: #3E5622;
+  padding: 0.8rem;
+}
+.btn-voltar {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.search-box input {
+  border: none;
+  padding: 0.6rem 1rem;
+}
+.search-box button {
+  background: none;
+  border: none;
+  color: #2C3E50;
+  font-size: 1.2rem;
+}
+.icon-link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.icon-link:hover {
+  color: #F1C40F;
+}
+
+/* Cards */
+.produto-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.produto-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.produto-card .btn-add {
+  background-color: #004d4d;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.produto-card .btn-add:hover {
+  background-color: #027373;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #3E5622;
+  color: #fff;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.social-icons a:hover {
+  color: #F1C40F;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produto-card img {
+    height: 150px;
+  }
+  .search-box input {
+    width: 150px;
+  }
+}
+
+/* Fim do Estilo da Tela de Produtos---------------------------------------- */
