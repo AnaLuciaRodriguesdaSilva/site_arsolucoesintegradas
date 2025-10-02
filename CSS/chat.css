@@ -195,7 +195,7 @@ body {
 /* Links do menu ao passar o mouse */
 .navbar .nav-link:hover { opacity: 0.9; }
 .navbar{
-    background-color: #A9BA9D;
+    background-color: #556B2F;
 }
 
 /* Ajustes responsivos leves */

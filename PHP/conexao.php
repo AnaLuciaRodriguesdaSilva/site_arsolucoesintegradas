@@ -21,4 +21,18 @@ try {
     . $e->getMessage());
 }
 
+// jogando os dados dentro de variaveis
+$nome = $_POST["nomecategoria"];
+$desconto = $_POST["desconto"];
+
+// VALIDANDO OS CAMPOS
+// criar uma variavel para receber os erros de validacao
+$erros_validacao=[];
+// se qualquer campo for vazio
+if($nome===""){
+    $erros_validacao[]="Preencha todos os campos";
+}
+/*Inserir a categoria no banco de dados*/
+
+
 ?>

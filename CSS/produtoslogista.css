@@ -28,7 +28,7 @@ main .card {
 /* Links do menu ao passar o mouse */
 .navbar .nav-link:hover { opacity: 0.9; }
 .navbar{
-    background-color: #7b139e;
+    background-color: #556B2F;
 }
 
 /* Ajustes responsivos leves */
@@ -41,7 +41,7 @@ main .card {
 .table td, .table th { vertical-align: middle; }
 
 .header {
-    background-color: #D9D9D9;
+    background-color: #556B2F;
     /* cor de fundo*/
     padding: 10px 20px;
     /*tamanho da área*/

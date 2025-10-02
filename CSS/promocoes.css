@@ -63,7 +63,7 @@ body {
 }
 
 .footer {
-    background-color: #cba3c9;
+    background-color: #A9BA9D;
     /*cor de fundo*/
     padding: 15px 40px 15px 40px;
     /*dimensão*/
@@ -77,7 +77,7 @@ body {
 /* Links do menu ao passar o mouse */
 .navbar .nav-link:hover { opacity: 0.9; }
 .navbar{
-    background-color: #7b139e;
+    background-color: #556B2F;
 }
 
 /* Ajustes responsivos leves */
