@@ -34,17 +34,20 @@ body {
   border: 1px solid #ccc;
   padding: 0.75rem 1rem;
 }
-
-/* Botão */
-.login-box .btn-login {
+/* Botão de Login */
+.btn-login {
   background-color: #004d4d;
   color: #fff;
   border-radius: 50px;
-  padding: 0.6rem;
+  padding: 0.6rem 1.5rem; /* altura e largura do botão */
   font-weight: bold;
-  transition: 0.3s;
   border: none;
+  transition: 0.3s ease;
+  display: inline-block; /* necessário para centralizar */
+  width: 150px;          /* controla o comprimento */
 }
+
+
 
 .login-box .btn-login:hover {
   background-color: #027373;
