@@ -41,4 +41,4 @@ echo json_encode["ok"=> true, "count"=>count($marcas),
         echo "<option disabled>Erro ao carregar</option>";
     }
     exit
-}s
+}
