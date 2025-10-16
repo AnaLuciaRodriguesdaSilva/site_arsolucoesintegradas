@@ -25,7 +25,7 @@
           <li class="nav-item"><a class="nav-link active" href="cadastro_produtos_logista.html">Produtos</a></li>
           <li class="nav-item"><a class="nav-link " href="promocoes_logista.html">Promoções</a></li>
           <li class="nav-item"><a class="nav-link  " href="frete_pagamento_logista.html">Pagamentos e Fretes</a></li>
-          <li class="nav-item"><a class="nav-link " href="chat_logista.html">Conversas</a></li>
+          <li class="nav-item"><a class="nav-link " href="chat_logista.html">Chat</a></li>
       
         </ul>
       </div>
@@ -45,7 +45,7 @@
           <form action="" method="" class="row g-3">
             <div class="col-md-6">
               <label for="catNome" class="form-label">Nome da categoria</label>
-              <input type="text" name="nomecategoria" class="form-control" id="catNome" placeholder="Ex.: Eletrônicos" />
+              <input type="text" name="nomecategoria" class="form-control" id="catNome" placeholder="Jardinagem e Paisagismo" />
             </div>
             <div class="col-md-6">
                <label for="pPreco" class="form-label">Desconto em toda categoria</label>
@@ -61,9 +61,12 @@
               <label for="catLista" class="form-label">Categorias criadas</label>
               <select id="catLista" class="form-select">
                 <option selected>Selecione uma categoria...</option>
-                <option>Brinquedos</option>
-                <option>Ração</option>
-                <option>Remédios</option>
+                <option>Jardinagem e Paisagismo</option>
+                <option>Decoração</option>
+                <option>Utensílios</option>
+                <option>Higiene e Beleza</option>
+                <option>Alimentação Saudável</option>
+                <option>Livraria</option>
               </select>
             </div>
           </form>
@@ -92,8 +95,8 @@
             <div class="col-12 col-md-9">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="brandNome" class="form-label">Nome da marca</label>
-                  <input type="text" name="nomemarca" id="brandNome" class="form-control" placeholder="Ex.: TechPro" />
+                  <label for="brandNome" class="form-label">Nome da Marca</label>
+                  <input type="text" name="nomemarca" id="brandNome" class="form-control" placeholder="Fundição Araguaia" />
                 </div>
                 <div class="col-12 d-flex gap-2">
                   <button type="submit" class="btn btn-primary">Cadastrar</button>
@@ -115,7 +118,7 @@
                       <tbody>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>TechPro</td>
+                          <td>Fundição Araguaia</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -123,7 +126,7 @@
                         </tr>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>GigaMax</td>
+                          <td>Saboaria Artezanal</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -131,7 +134,7 @@
                         </tr>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>Mobix</td>
+                          <td>É do Balseiro</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -189,7 +192,7 @@
             <!-- Dados do produto -->
             <div class="col-md-6">
               <label for="pNome" class="form-label">Nome</label>
-              <input name="nomeproduto" type="text" id="pNome" class="form-control" placeholder="Ex.: Fone Bluetooth X200" />
+              <input name="nomeproduto" type="text" id="pNome" class="form-control" placeholder="Cuscuzeira de Aluminio Fundido" />
             </div>
             <div class="col-md-3">
               <label for="pQtd" class="form-label">Quantidade</label>
@@ -221,18 +224,18 @@
               <label name="categoriaproduto" for="pCategoria" class="form-label">Categoria</label>
               <select id="pCategoria" class="form-select">
                 <option selected>Selecione...</option>
-                <option>Informática</option>
-                <option>Celulares</option>
-                <option>Acessórios</option>
+                <option>Utensílios</option>
+                <option>Higiene</option>
+                <option>Jardinagem e Paisagismo</option>
               </select>
             </div>
             <div class="col-md-6">
               <label for="pMarca" class="form-label">Marca</label>
               <select name="marcaproduto" id="pMarca" class="form-select">
                 <option selected>Selecione...</option>
-                <option>TechPro</option>
-                <option>GigaMax</option>
-                <option>Mobix</option>
+                <option>Fundição Araguaia</option>
+                <option>Saboaria Artesanal</option>
+                <option>É do Balseiro</option>
               </select>
             </div>
 
@@ -279,13 +282,13 @@
             <td>
               <div class="prod-thumb rounded border"></div>
             </td>
-            <td>Fone Bluetooth X200</td>
-            <td>TechPro</td>
-            <td><span class="badge text-bg-light me-1">Acessórios</span><span class="badge text-bg-light">Celulares</span></td>
-            <td class="text-end">25</td>
-            <td class="text-end">R$ 199,90</td>
-            <td class="text-end">R$ 169,90</td>
-            <td>SKU-FTX200</td>
+            <td>Cuscuzeira de Aluminio Fundido</td>
+            <td>Fundição Araguaia</td>
+            <td><span class="badge text-bg-light me-1">Utensílios</span><span class="badge text-bg-light">Média</span></td>
+            <td class="text-end">8</td>
+            <td class="text-end">R$ 178,51</td>
+            <td class="text-end">R$ 162,29</td>
+            <td>AR.-C.A.F.01</td>
             <td class="text-end">
               <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
               <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
@@ -296,13 +299,13 @@
             <td>
               <div class="prod-thumb rounded border"></div>
             </td>
-            <td>Ração Premium 10kg</td>
-            <td>GigaMax</td>
-            <td><span class="badge text-bg-light">Pets</span></td>
-            <td class="text-end">12</td>
-            <td class="text-end">R$ 129,00</td>
+            <td>Sabonetes Artezanais 3kg</td>
+            <td>Saboaria Artezanal</td>
+            <td><span class="badge text-bg-light">Higiene e Beleza</span></td>
+            <td class="text-end">50</td>
+            <td class="text-end">R$ 36,50</td>
             <td class="text-end">—</td>
-            <td>RAC-10K-001</td>
+            <td>AR.-10K-001</td>
             <td class="text-end">
               <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
               <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
@@ -313,13 +316,13 @@
             <td>
               <div class="prod-thumb rounded border"></div>
             </td>
-            <td>Brinquedo Mordedor</td>
-            <td>Mobix</td>
-            <td><span class="badge text-bg-light">Pets</span></td>
-            <td class="text-end">80</td>
-            <td class="text-end">R$ 29,90</td>
+            <td>Plantscaping</td>
+            <td>É do Balseiro</td>
+            <td><span class="badge text-bg-light">Jardinagem e Paisagismo</span></td>
+            <td class="text-end">30</td>
+            <td class="text-end">R$ 392,00</td>
             <td class="text-end">—</td>
-            <td>BRQ-2025</td>
+            <td>AR.-2025</td>
             <td class="text-end">
               <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
               <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
