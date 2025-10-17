@@ -26,7 +26,8 @@
           <li class="nav-item"><a class="nav-link " href="promocoes_logista.html">Promoções</a></li>
           <li class="nav-item"><a class="nav-link  " href="frete_pagamento_logista.html">Pagamentos e Fretes</a></li>
           <li class="nav-item"><a class="nav-link " href="chat_logista.html">Chat</a></li>
-      
+          <li class="nav-item"><a class="nav-link " href="parceiros_logista.html">Parceiros</a></li>
+
         </ul>
       </div>
     </div>
@@ -42,7 +43,7 @@
         </div>
         <div class="card-body">
 
-          <form action="" method="" class="row g-3">
+          <form action="../PHP/cadastro_de_produtos.php" method="post" class="row g-3">
             <div class="col-md-6">
               <label for="catNome" class="form-label">Nome da categoria</label>
               <input type="text" name="nomecategoria" class="form-control" id="catNome" placeholder="Jardinagem e Paisagismo" />
@@ -94,15 +95,15 @@
 
             <div class="col-12 col-md-9">
               <div class="row g-3">
-                <div class="col-md-6">
+                <Do class="col-md-6">
                   <label for="brandNome" class="form-label">Nome da Marca</label>
-                  <input type="text" name="nomemarca" id="brandNome" class="form-control" placeholder="Fundição Araguaia" />
-                </div>
-                <div class="col-12 d-flex gap-2">
+                  <input type="text" name="nomemarca" id="brandNome" class="form-control" placeholder="É Do Balseiro" />
+                </Do>
+                <Do class="col-12 d-flex gap-2">
                   <button type="submit" class="btn btn-primary">Cadastrar</button>
                   <button type="submit" class="btn btn-outline-secondary">Editar</button>
                   <button type="submit" class="btn btn-outline-danger">Excluir</button>
-                </div>
+                </Do>
 
                 <div class="col-12">
                   <label class="form-label">Marcas cadastradas</label>
@@ -118,7 +119,7 @@
                       <tbody>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>Fundição Araguaia</td>
+                          <td>É Do Balseiro</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -126,7 +127,7 @@
                         </tr>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>Saboaria Artezanal</td>
+                          <td>Saboaria Artezanal É Do Balseiro</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -134,7 +135,7 @@
                         </tr>
                         <tr>
                           <td><div class="logo-sample rounded"></div></td>
-                          <td>É do Balseiro</td>
+                          <td>É Do Balseiro</td>
                           <td class="text-end">
                             <button class="btn btn-sm btn-outline-secondary">Editar</button>
                             <button class="btn btn-sm btn-outline-danger">Excluir</button>
@@ -159,7 +160,7 @@
           <h5 class="m-0">Cadastro de Produtos</h5>
         </div>
         <div class="card-body">
-          <form action="" method="post" class="row g-3" enctype="multipart/form-data">
+          <form action="../PHP/cadastro_de_produtos.php" method="post" class="row g-3" enctype="multipart/form-data">
 
             <!-- Imagens (3) -->
             <div class="col-12">
@@ -192,49 +193,49 @@
             <!-- Dados do produto -->
             <div class="col-md-6">
               <label for="pNome" class="form-label">Nome</label>
-              <input name="nomeproduto" type="text" id="pNome" class="form-control" placeholder="Cuscuzeira de Aluminio Fundido" />
+              <input name="nomeproduto" type="text" id="pNome" class="form-control" placeholder="Plantscaping" />
             </div>
             <div class="col-md-3">
               <label for="pQtd" class="form-label">Quantidade</label>
-              <input name="quantidade" type="number" id="pQtd" class="form-control" min="0" step="1" />
+              <input name="quantidade" type="number" id="pQtd" class="form-control" min="0" step="8" />
             </div>
             <div class="col-md-3">
               <label for="pPreco" class="form-label">Preço</label>
-              <input name="preco" type="number" id="pPreco" class="form-control" min="0" step="0.01" placeholder="0,00" />
+              <input name="preco" type="number" id="pPreco" class="form-control" min="0" step="0.01" placeholder="450,80" />
             </div>
 
             <div class="col-md-3">
               <label for="pTamanho" class="form-label">Tamanho</label>
-              <input name="tamanho" type="text" id="pTamanho" class="form-control" placeholder="Ex.: P, M, G ou dimensões" />
+              <input name="tamanho" type="text" id="pTamanho" class="form-control" placeholder="Médio" />
             </div>
             <div class="col-md-3">
               <label for="pCor" class="form-label">Cor</label>
-              <input name="cor" type="text" id="pCor" class="form-control" placeholder="Ex.: Preto" />
+              <input name="cor" type="text" id="pCor" class="form-control" placeholder="Ex.: marron, verde, roxo, amarelo" />
             </div>
             <div class="col-md-3">
               <label for="pCodigo" class="form-label">Código / SKU</label>
-              <input name="codigo" type="text" id="pCodigo" class="form-control" />
+              <input name="codigo" type="text" id="pCodigo" class="form-control"placeholder="AR.-P.EB.01"/>
             </div>
             <div class="col-md-3">
               <label for="pPrecoPromo" class="form-label">Preço promocional</label>
-              <input name="precopromocional" type="number" id="pPrecoPromo" class="form-control" min="0" step="0.01" placeholder="Opcional" />
+              <input name="precopromocional" type="number" id="pPrecoPromo" class="form-control" min="0" step="0,00" placeholder="Opcional" />
             </div>
 
             <div class="col-md-6">
               <label name="categoriaproduto" for="pCategoria" class="form-label">Categoria</label>
               <select id="pCategoria" class="form-select">
                 <option selected>Selecione...</option>
-                <option>Utensílios</option>
-                <option>Higiene</option>
                 <option>Jardinagem e Paisagismo</option>
+                <option>Higiene</option>
+                <option>Alimentos Saudáveis</option>
               </select>
             </div>
             <div class="col-md-6">
               <label for="pMarca" class="form-label">Marca</label>
               <select name="marcaproduto" id="pMarca" class="form-select">
                 <option selected>Selecione...</option>
-                <option>Fundição Araguaia</option>
-                <option>Saboaria Artesanal</option>
+                <option>É Do Balseiro</option>
+                <option>Saboaria Artesanal É Do Balseiro</option>
                 <option>É do Balseiro</option>
               </select>
             </div>
@@ -277,57 +278,7 @@
         </thead>
         <tbody>
           <!-- EXEMPLOS ESTÁTICOS (substitua pelos seus dados quando integrar) -->
-          <tr>
-            <td>105</td>
-            <td>
-              <div class="prod-thumb rounded border"></div>
-            </td>
-            <td>Cuscuzeira de Aluminio Fundido</td>
-            <td>Fundição Araguaia</td>
-            <td><span class="badge text-bg-light me-1">Utensílios</span><span class="badge text-bg-light">Média</span></td>
-            <td class="text-end">8</td>
-            <td class="text-end">R$ 178,51</td>
-            <td class="text-end">R$ 162,29</td>
-            <td>AR.-C.A.F.01</td>
-            <td class="text-end">
-              <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-              <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>104</td>
-            <td>
-              <div class="prod-thumb rounded border"></div>
-            </td>
-            <td>Sabonetes Artezanais 3kg</td>
-            <td>Saboaria Artezanal</td>
-            <td><span class="badge text-bg-light">Higiene e Beleza</span></td>
-            <td class="text-end">50</td>
-            <td class="text-end">R$ 36,50</td>
-            <td class="text-end">—</td>
-            <td>AR.-10K-001</td>
-            <td class="text-end">
-              <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-              <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>103</td>
-            <td>
-              <div class="prod-thumb rounded border"></div>
-            </td>
-            <td>Plantscaping</td>
-            <td>É do Balseiro</td>
-            <td><span class="badge text-bg-light">Jardinagem e Paisagismo</span></td>
-            <td class="text-end">30</td>
-            <td class="text-end">R$ 392,00</td>
-            <td class="text-end">—</td>
-            <td>AR.-2025</td>
-            <td class="text-end">
-              <a href="#" class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-              <a href="#" class="btn btn-sm btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-            </td>
-          </tr>
+          
           <!-- /EXEMPLOS -->
         </tbody>
         
