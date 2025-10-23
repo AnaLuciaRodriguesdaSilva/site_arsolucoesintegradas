@@ -21,12 +21,9 @@
 
       <div class="collapse navbar-collapse" id="topNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
-          <li class="nav-item"><a class="nav-link " href="home_lojista.html">Relatórios</a></li>
+           <li class="nav-item"><a class="nav-link " href="relatorio_lojista.html">Relatórios</a></li>
           <li class="nav-item"><a class="nav-link" href="cadastro_produtos_logista.html">Produtos</a></li>
           <li class="nav-item"><a class="nav-link active" href="promocoes_logista.html">Promoções</a></li>
-          <li class="nav-item"><a class="nav-link  " href="frete_pagamento_logista.html">Pagamentos e Fretes</a></li>
-          <li class="nav-item"><a class="nav-link " href="chat_logista.html">Conversas</a></li>
-          <li class="nav-item"><a class="nav-link " href="chat_logista.html">Parceiros</a></li>
       
         </ul>
       </div>
@@ -67,12 +64,7 @@
                 <div class="col-md-6">
                   <label class="form-label">Categoria (opcional)</label>
                   <select class="form-select">
-                    <option value="">Jardinagem e Paisagismo</option>
-                    <option value="1">Decoração</option>
-                    <option value="2">Utensílios</option>
-                    <option value="3">Alimentação Saudável</option>
-                    <option value="4">Higiene e Beleza</option>
-                    <option value="5">Livraria</option>
+                    
                   </select>
                 </div>
                 <div class="col-md-8">
@@ -109,127 +101,17 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><div class="mini-banner rounded"></div></td>
-                  <td>Plantscaping</td>
-                  <td>/Floricultura viver bem</td>
-                  <td>Jardinagem e Paisagismo</td>
-                  <td>25/12/2025</td>
-                  <td class="text-end">
-                    <div class="btn-group btn-group-sm">
-                      <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-                      <a href="#" class="btn btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><div class="mini-banner rounded"></div></td>
-                  <td>Cuscuzeira</td>
-                  <td>/Fundição Araguaia</td>
-                  <td>Utensílios<U/td>
-                  <td>25/12/2025</td>
-                  <td class="text-end">
-                    <div class="btn-group btn-group-sm">
-                      <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-                      <a href="#" class="btn btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-                    </div>
-                  </td>
-                </tr>
+                
               </tbody>
-              <tfoot>
-                <tr><td colspan="6" class="small text-muted">* Lista estática (HTML). Integração posterior.</td></tr>
-              </tfoot>
+              
             </table>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== CUPONS ===================== -->
-    <section class="mb-5" aria-labelledby="titulo-cupom">
-      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-        <h4 id="titulo-cupom" class="section-title m-0">Cupons</h4>
-        <span class="text-muted small">Tabela: <code>Cupom</code></span>
-      </div>
-
-      <div class="card shadow-sm">
-        <div class="card-header bg-white">
-          <strong>Cadastrar/Atualizar cupom</strong>
-        </div>
-        <div class="card-body">
-          <form class="row g-3">
-            <div class="col-md-4">
-              <label class="form-label">Nome do cupom</label>
-              <input type="text" class="form-control" maxlength="45" placeholder="Natal 2025">
-            </div>
-            <div class="col-md-4">
-              <label class="form-label">Valor (R$ ou %)</label>
-              <input type="number" class="form-control" step="0.01" placeholder="Ex.: 10,00">
-              <div class="form-text">* Interpretação do tipo no backend.</div>
-            </div>
-            <div class="col-md-4">
-              <label class="form-label">Validade</label>
-              <input type="date" class="form-control">
-            </div>
-            <div class="col-md-4">
-              <label class="form-label">Quantidade</label>
-              <input type="number" class="form-control" min="1" placeholder="50">
-            </div>
-            <div class="col-12 d-flex gap-2">
-              <button type="button" class="btn btn-primary" disabled>Cadastrar</button>
-              <button type="button" class="btn btn-outline-secondary" disabled>Editar</button>
-              <button type="button" class="btn btn-outline-danger" disabled>Excluir</button>
-            </div>
-          </form>
-        </div>
-
-        <!-- Lista de Cupons -->
-        <div class="card-body border-top">
-          <div class="table-responsive">
-            <table class="table align-middle table-hover table-list">
-              <thead class="table-light">
-                <tr>
-                  <th>Nome</th>
-                  <th>Valor</th>
-                  <th>Validade</th>
-                  <th>Quantidade</th>
-                  <th class="text-end" style="width:170px;">Ações</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kit 1 Passadeira e 2 tapetes</td>
-                  <td>175,80</td>
-                  <td>25/12/2025</td>
-                  <td>10</td>
-                  <td class="text-end">
-                    <div class="btn-group btn-group-sm">
-                      <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-                      <a href="#" class="btn btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Mesa Rústica de madeira</td>
-                  <td>4500,00</td>
-                  <td>25/12/2025</td>
-                  <td>5</td>
-                  <td class="text-end">
-                    <div class="btn-group btn-group-sm">
-                      <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>
-                      <a href="#" class="btn btn-outline-danger disabled" aria-disabled="true">Excluir</a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr><td colspan="5" class="small text-muted">* Lista estática (HTML). Integração posterior.</td></tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+   
+        
 
     <!-- ===================== PROMOÇÕES EM CATEGORIAS ===================== -->
     <section class="mb-5" aria-labelledby="titulo-promocao-categoria">

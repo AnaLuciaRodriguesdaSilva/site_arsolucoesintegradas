@@ -21,12 +21,9 @@
 
       <div class="collapse navbar-collapse" id="topNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
-          <li class="nav-item"><a class="nav-link " href="home_lojista.html">Relatórios</a></li>
+           <li class="nav-item"><a class="nav-link " href="relatorio_lojista.html">Relatórios</a></li>
           <li class="nav-item"><a class="nav-link active" href="cadastro_produtos_logista.html">Produtos</a></li>
-          <li class="nav-item"><a class="nav-link " href="promocoes_logista.html">Promoções</a></li>
-          <li class="nav-item"><a class="nav-link  " href="frete_pagamento_logista.html">Pagamentos e Fretes</a></li>
-          <li class="nav-item"><a class="nav-link " href="chat_logista.html">Chat</a></li>
-          <li class="nav-item"><a class="nav-link " href="parceiros_logista.html">Parceiros</a></li>
+          <li class="nav-item"><a class="nav-link" href="promocoes_logista.html">Promoções</a></li>
 
         </ul>
       </div>
@@ -61,13 +58,7 @@
             <div class="col-12 col-md-6">
               <label for="catLista" class="form-label">Categorias criadas</label>
               <select id="catLista" class="form-select">
-                <option selected>Selecione uma categoria...</option>
-                <option>Jardinagem e Paisagismo</option>
-                <option>Decoração</option>
-                <option>Utensílios</option>
-                <option>Higiene e Beleza</option>
-                <option>Alimentação Saudável</option>
-                <option>Livraria</option>
+               
               </select>
             </div>
           </form>
@@ -75,84 +66,7 @@
       </div>
     </section>
 
-    <!-- 3) Marcas -->
-    <section id="marcas" class="mb-4">
-      <div class="card shadow-sm">
-        <div class="card-header bg-white">
-          <h5 class="m-0">Cadastro de Marcas</h5>
-        </div>
-        <div class="card-body">
-
-          <form class="row g-3" action="" method="post" enctype="multipart/form-data">
-            <div class="col-12 col-md-3 text-center">
-              <div class="brand-thumb border rounded d-flex align-items-center justify-content-center overflow-hidden">
-                <img id="brandPreview" alt="Prévia da marca" class="img-fluid d-none" />
-                <span id="brandPlaceholder" class="text-muted">Prévia da imagem</span>
-              </div>
-              <label for="brandImg" class="form-label mt-2">Imagem da marca</label>
-              <input class="form-control" name="imagemmarca" type="file" id="brandImg" accept="image/*" />
-            </div>
-
-            <div class="col-12 col-md-9">
-              <div class="row g-3">
-                <Do class="col-md-6">
-                  <label for="brandNome" class="form-label">Nome da Marca</label>
-                  <input type="text" name="nomemarca" id="brandNome" class="form-control" placeholder="É Do Balseiro" />
-                </Do>
-                <Do class="col-12 d-flex gap-2">
-                  <button type="submit" class="btn btn-primary">Cadastrar</button>
-                  <button type="submit" class="btn btn-outline-secondary">Editar</button>
-                  <button type="submit" class="btn btn-outline-danger">Excluir</button>
-                </Do>
-
-                <div class="col-12">
-                  <label class="form-label">Marcas cadastradas</label>
-                  <div class="table-responsive">
-                    <table class="table align-middle mb-0">
-                      <thead>
-                        <tr>
-                          <th style="width: 72px;">Logo</th>
-                          <th>Nome</th>
-                          <th class="text-end">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><div class="logo-sample rounded"></div></td>
-                          <td>É Do Balseiro</td>
-                          <td class="text-end">
-                            <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                            <button class="btn btn-sm btn-outline-danger">Excluir</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><div class="logo-sample rounded"></div></td>
-                          <td>Saboaria Artezanal É Do Balseiro</td>
-                          <td class="text-end">
-                            <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                            <button class="btn btn-sm btn-outline-danger">Excluir</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><div class="logo-sample rounded"></div></td>
-                          <td>É Do Balseiro</td>
-                          <td class="text-end">
-                            <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                            <button class="btn btn-sm btn-outline-danger">Excluir</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
+  
     <!-- 4) Produtos -->
     <section id="produtos" class="mb-5">
       <div class="card shadow-sm">
@@ -225,20 +139,10 @@
               <label name="categoriaproduto" for="pCategoria" class="form-label">Categoria</label>
               <select id="pCategoria" class="form-select">
                 <option selected>Selecione...</option>
-                <option>Jardinagem e Paisagismo</option>
-                <option>Higiene</option>
-                <option>Alimentos Saudáveis</option>
+               
               </select>
             </div>
-            <div class="col-md-6">
-              <label for="pMarca" class="form-label">Marca</label>
-              <select name="marcaproduto" id="pMarca" class="form-select">
-                <option selected>Selecione...</option>
-                <option>É Do Balseiro</option>
-                <option>Saboaria Artesanal É Do Balseiro</option>
-                <option>É do Balseiro</option>
-              </select>
-            </div>
+            
 
             <div class="col-12 d-flex gap-2">
               <button type="submit" class="btn btn-primary">Cadastrar</button>
