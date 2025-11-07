@@ -1,89 +1,156 @@
+/* ======== GERAL ======== */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #2e5733;
+  transition: all 0.3s ease;
 }
 
-/* Barra superior */
-.top-bar {
-  background-color: #4b6532;
-  color: white;
-  height: 60px;
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
 }
-.top-bar .search-bar input {
+
+.dark-mode .card {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background-color: #264b2b !important;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background-color: #dfe8d8 !important;
+}
+
+.search-box input {
   width: 250px;
-  border-radius: 20px;
-  padding: 5px 15px;
-}
-.top-bar .icons i {
-  font-size: 20px;
-  cursor: pointer;
+  border: 1px solid #a0b49f;
 }
 
-/* Banner */
-.banner h2 {
-  color: #dee2e6;
-  font-weight: bold;
-}
-.banner .img-banner {
-  width: 45%;
-  border-radius: 20px;
-  margin: 10px;
+/* ======== TÍTULOS ======== */
+h3, h4 {
+  color: #2e5733;
 }
 
-/* Categorias */
-.categorias h3 {
-  color: #4b6532;
-  font-weight: bold;
-}
-.categoria-item {
-  margin: 10px;
-  text-align: center;
-}
-.categoria-item img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-/* Produtos */
-.produtos h3, .produtos h4 {
-  color: #4b6532;
-  font-weight: bold;
-}
-.product-card {
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  transition: transform 0.3s;
-}
-.product-card:hover {
-  transform: scale(1.03);
-}
-.product-card img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+/* ======== CARROSSEL ======== */
+#carouselPromocoes img {
   height: 180px;
   object-fit: cover;
-}
-.product-card .price {
-  color: #004d4d;
-  font-weight: bold;
-}
-.btn-add {
-  background-color: #004d4d;
-  color: white;
-  border-radius: 30px;
-}
-.btn-add:hover {
-  background-color: #397d39;
+  border-radius: 10px;
 }
 
-/* Rodapé */
+/* ======== BOTÕES DE CATEGORIA ======== */
+.btn-outline-success {
+  border-color: #2e5733;
+  color: #2e5733;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn-outline-success:hover {
+  background-color: #2e5733;
+  color: white;
+}
+
+/* ======== CARDS ======== */
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  font-size: 0.95rem;
+}
+
+.card .btn-success {
+  background-color: #2e5733;
+  border: none;
+}
+
+.card .btn-outline-success {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+/* ======== RODAPÉ ======== */
 .footer {
-  background-color: #dce5d3;
-  color: #333;
+  background-color: #2e5733;
+  font-size: 0.9rem;
 }
-.footer img {
-  width: 25px;
-  margin: 0 5px;
+
+.footer a {
+  text-decoration: none;
 }
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ======== ÍCONES FLUTUANTES ======== */
+.social-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-floating a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-floating .whatsapp {
+  background-color: #25D366;
+}
+
+.social-floating .instagram {
+  background-color: #C13584;
+}
+
+.social-floating a:hover {
+  transform: scale(1.1);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+  .search-box input {
+    width: 150px;
+  }
+
+  #carouselPromocoes img {
+    height: 140px;
+  }
+
+  .btn-outline-success {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .social-floating {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+

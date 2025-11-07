@@ -47,7 +47,7 @@
         <div class="card-body">
           <form class="row g-3" enctype="multipart/form-data">
             <div class="col-12 col-md-4">
-              <label class="form-label">Imagem do banner</label>
+              <label class="form-label"><><img src="bannerimg 1.png"></label>
               <div class="banner-thumb border rounded d-flex align-items-center justify-content-center">
                 <span class="text-muted">Prévia</span>
               </div>
@@ -101,7 +101,29 @@
                 </tr>
               </thead>
               <tbody>
-                
+                <!-- CARROSSEL DE BANNERS -->
+      <div id="carouselBanners" class="carousel slide carousel-fade"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators" id="banners-indicators"></div>
+        <div class="carousel-inner" id="banners-home">
+          <!-- Itens serão inseridos via JS -->
+          <div class="carousel-item active">
+            <div class="p-3 text-muted">Carregando banners…</div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselBanners" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselBanners" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
               </tbody>
               
             </table>
@@ -109,10 +131,8 @@
         </div>
       </div>
     </section>
-
-   
-        
-
+          
+     
     <!-- ===================== PROMOÇÕES EM CATEGORIAS ===================== -->
     <section class="mb-5" aria-labelledby="titulo-promocao-categoria">
       <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
@@ -128,13 +148,8 @@
           <form class="row g-3">
             <div class="col-md-6">
               <label class="form-label">Categoria</label>
-              <select class="form-select">
-                <option value="1">Jardinagem e Paisagismo</option>
-                <option value="2">Decoração</option>
-                <option value="3">Utensílios Domesticos</option>
-                <option value="3">Alimentos Saudadeis</option>
-                <option value="3">Higienicos/Beleza</option>
-                <option value="3">Livraria</option>
+              <select class="form-select" >
+            
               </select>
             </div>
             <div class="col-md-3">
@@ -168,7 +183,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Utensílios</td>
+                  <td>Pantas Ornamentais</td>
                   <td>15%</td>
                   <td>25/12/2025</td>
                   <td class="text-end">
@@ -179,7 +194,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Alimentos</td>
+                  <td>Adubação</td>
                   <td>10%</td>
                   <td>25/12/2025</td>
                   <td class="text-end">
@@ -215,9 +230,9 @@
             <div class="col-md-6">
               <label class="form-label">Produto</label>
               <select class="form-select">
-                <option value="101">Cuscuzeira de Aluminio fundido capacidade 500ml</option>
-                <option value="102">Caçarola de Aluminio Fundido número 28</option>
-                <option value="103">Caçarola de Aluminio Fundido número 24</option>
+                <option value="101">Palmeira Fenix 2m</option>
+                <option value="102">Palmeira Rabo de Raposa</option>
+                <option value="103">Rosa do Deserto Bicolor, mult petálas</option>
               </select>
             </div>
             <div class="col-md-3">
@@ -252,11 +267,11 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Caçarola e tampa de aluminio fundido número 28 </td>
+                  <td> Orquideas Cattleya labiata </td>
                   <td>R$ 215,25</td>
                   <td class="text-success fw-semibold">R$ 195,69</td>
-                  <td>Fundição Araguaia</td>
-                  <td>Utensílios Domésticos</td>
+                  <td>Bem Viver</td>
+                  <td>Plantas Ornamental</td>
                   <td class="text-end">
                     <div class="btn-group btn-group-sm">
                       <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>
@@ -265,11 +280,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Caçarola e tampa de aluminio fundido número 24</td>
-                  <td>R$ 132,00</td>
-                  <td class="text-success fw-semibold">R$ 120,00</td>
-                  <td>Fundição Araguaia</td>
-                  <td>Utensílios Domésticos</td>
+                  <td>Grama Esmeralda</td>
+                  <td>R$ 14,00m</td>
+                  <td class="text-success fw-semibold">R$ 12,85</td>
+                  <td>Casa & Jardim</td>
+                  <td>Forração do Solo</td>
                   <td class="text-end">
                     <div class="btn-group btn-group-sm">
                       <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">Editar</a>

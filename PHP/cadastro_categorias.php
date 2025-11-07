@@ -68,10 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["listar"])) {
 }
 
 
-
-
-
-
 // códigos de cadastro
 try{
 // SE O METODO DE ENVIO FOR DIFERENTE DO POST
